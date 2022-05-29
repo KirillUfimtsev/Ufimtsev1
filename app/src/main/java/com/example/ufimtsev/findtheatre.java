@@ -68,7 +68,7 @@ public class findtheatre extends AppCompatActivity {
 
             try {
                 URL mySite = new
-                        URL("http://127.0.0.1:8080/kino?ID=1&Name=" + params[0]);
+                        URL("http://10.0.2.2:8080/kino?ID=1&Name=" + params[0]);
                 myConnection =
                         (HttpURLConnection) mySite.openConnection();
             } catch (MalformedURLException e) {
