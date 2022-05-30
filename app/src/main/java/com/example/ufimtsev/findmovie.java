@@ -117,7 +117,7 @@ public class findmovie extends AppCompatActivity {
                         e.printStackTrace();
                     }
                     ;
-                    String[] str = new String[2];
+                    String[] str = new String[3];
                     int n = 0;
                     while (true) {
                         try {
@@ -190,6 +190,7 @@ public class findmovie extends AppCompatActivity {
             String[] p =(String[]) getItem(position);
             ((TextView) view.findViewById(R.id.tvText)).setText(p[0]);
             ((TextView) view.findViewById(R.id.tvText1)).setText(p[1]);
+            ((TextView) view.findViewById(R.id.tvText2)).setText(p[2]);
             return view;
         };
     }
